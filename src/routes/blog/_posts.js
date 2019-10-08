@@ -52,16 +52,6 @@ const posts = [
 	},
 
 	{
-		title: 'Why the name?',
-		slug: 'why-the-name',
-		html: `
-			<p>In war, the soldiers who build bridges, repair roads, clear minefields and conduct demolitions — all under combat conditions — are known as <em>sappers</em>.</p>
-
-			<p>For web developers, the stakes are generally lower than those for combat engineers. But we face our own hostile environment: underpowered devices, poor network connections, and the complexity inherent in front-end engineering. Sapper, which is short for <strong>S</strong>velte <strong>app</strong> mak<strong>er</strong>, is your courageous and dutiful ally.</p>
-		`
-	},
-
-	{
 		title: 'How is Sapper different from Next.js?',
 		slug: 'how-is-sapper-different-from-next',
 		html: `
@@ -77,10 +67,12 @@ const posts = [
 	},
 
 	{
-		title: 'How can I get involved?',
-		slug: 'how-can-i-get-involved',
+		title: 'Preload all the things!',
+		slug: 'preload-all-the-things',
 		html: `
-			<p>We're so glad you asked! Come on over to the <a href='https://github.com/sveltejs/svelte'>Svelte</a> and <a href='https://github.com/sveltejs/sapper'>Sapper</a> repos, and join us in the <a href='https://svelte.dev/chat'>Discord chatroom</a>. Everyone is welcome, especially you!</p>
+			<p>Awesome trait about Snapper: preloading - when you hover or tap a link, <code>rel=prefetch</code> fetches the content for you, so the transition is seamless. Lazy without being slow!</p>
+			<p>Check out <a href="https://sapper.svelte.dev/docs#Preloading">Sapper preloading docs</a></p>
+			<p>It also stores them in <a href="https://sapper.svelte.dev/docs#Stores">Svelte store</a>, neat 🙌</p>
 		`
 	}
 ];
