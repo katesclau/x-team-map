@@ -1,7 +1,17 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-
+	import { onMount } from 'svelte';
+  import Nav from '../components/Nav.svelte';
+  import NavLink from '../components/NavLink.svelte';
+	import routes from './routes.json';
+	
 	export let segment;
+
+	onMount(async () => {
+		segment = segment || { 
+			title: 'Home',
+			slug: '',
+		};
+	})
 </script>
 
 <style>
@@ -15,7 +25,13 @@
 	}
 </style>
 
-<Nav {segment}/>
+{@debug routes}
+<Nav {segment}>
+	{#each routes as route}
+		{@debug route}
+		<NavLink {segment} {route}/>
+	{/each}
+</Nav>
 
 <main>
 	<slot></slot>
