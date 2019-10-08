@@ -17,4 +17,4 @@
 
 </div>
 
-<slot></slot>
+<slot>No content</slot>

@@ -1,1 +1,3 @@
-<p>Profile</p>
+<div>
+  <p>Profile</p>
+</div>
